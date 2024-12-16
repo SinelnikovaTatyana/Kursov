@@ -1,0 +1,9 @@
+<map id="server.h" name="server.h">
+<area shape="rect" id="node1" title="Основной заголовочный файл для сервера." alt="" coords="362,5,437,32"/>
+<area shape="rect" id="node2" href="$authorization_8cpp.html" title="Реализация функций для обработки авторизации клиентов." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$calculator_8cpp.html" title="Реализация функций для вычисления произведения элементов вектора." alt="" coords="165,80,277,107"/>
+<area shape="rect" id="node4" href="$error_8cpp.html" title="Реализация функций для обработки и записи ошибок." alt="" coords="301,80,380,107"/>
+<area shape="rect" id="node5" href="$Interface_8cpp.html" title="Реализация функций для обработки интерфейса командной строки." alt="" coords="405,80,511,107"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Основной файл для запуска сервера." alt="" coords="535,80,618,107"/>
+<area shape="rect" id="node7" href="$server_8cpp.html" title="Реализация функций для работы сервера." alt="" coords="643,80,732,107"/>
+</map>
