@@ -1,0 +1,87 @@
+\begin{theindex}
+
+  \item {authorization.cpp}, \hyperpage{21}
+  \item {Authorized}, \hyperpage{7}
+    \subitem {Authorized}, \hyperpage{7}
+    \subitem {authorized}, \hyperpage{8}
+    \subitem {msgsend}, \hyperpage{8}
+    \subitem {salt\_generator}, \hyperpage{9}
+    \subitem {SHA}, \hyperpage{9}
+  \item {authorized}
+    \subitem {Authorized}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Calculator}, \hyperpage{10}
+    \subitem {processVector}, \hyperpage{10}
+  \item {calculator.cpp}, \hyperpage{22}
+  \item {client\_addr}
+    \subitem {Server}, \hyperpage{18}
+
+  \indexspace
+
+  \item {er}
+    \subitem {Error}, \hyperpage{11}
+  \item {Error}, \hyperpage{11}
+    \subitem {er}, \hyperpage{11}
+    \subitem {errors}, \hyperpage{12}
+  \item {error.cpp}, \hyperpage{22}
+  \item {errors}
+    \subitem {Error}, \hyperpage{12}
+
+  \indexspace
+
+  \item {getDescription}
+    \subitem {Interface}, \hyperpage{13}
+  \item {getErrorFile}
+    \subitem {Interface}, \hyperpage{14}
+  \item {getFileName}
+    \subitem {Interface}, \hyperpage{14}
+  \item {getPort}
+    \subitem {Interface}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Interface}, \hyperpage{12}
+    \subitem {getDescription}, \hyperpage{13}
+    \subitem {getErrorFile}, \hyperpage{14}
+    \subitem {getFileName}, \hyperpage{14}
+    \subitem {getPort}, \hyperpage{14}
+    \subitem {Interface}, \hyperpage{13}
+    \subitem {parseArguments}, \hyperpage{15}
+  \item {Interface.cpp}, \hyperpage{23}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{24}
+  \item {msgsend}
+    \subitem {Authorized}, \hyperpage{8}
+
+  \indexspace
+
+  \item {parseArguments}
+    \subitem {Interface}, \hyperpage{15}
+  \item {processVector}
+    \subitem {Calculator}, \hyperpage{10}
+
+  \indexspace
+
+  \item {RuntimeError}, \hyperpage{15}
+    \subitem {RuntimeError}, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item {salt\_generator}
+    \subitem {Authorized}, \hyperpage{9}
+  \item {self\_addr}
+    \subitem {Server}, \hyperpage{19}
+  \item {Server}, \hyperpage{17}
+    \subitem {client\_addr}, \hyperpage{18}
+    \subitem {self\_addr}, \hyperpage{19}
+    \subitem {Server}, \hyperpage{18}
+  \item {server.cpp}, \hyperpage{25}
+  \item {server.h}, \hyperpage{26}
+  \item {SHA}
+    \subitem {Authorized}, \hyperpage{9}
+
+\end{theindex}

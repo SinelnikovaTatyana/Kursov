@@ -1,0 +1,148 @@
+\hypertarget{classInterface}{}\doxysection{Класс Interface}
+\label{classInterface}\index{Interface@{Interface}}
+
+
+Класс для обработки интерфейса командной строки.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}{Interface}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classInterface}{Interface}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classInterface_afc6d4df424b888cd415cdceabab59900}{get\+File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает имя файла с базой данных пользователей. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает номер порта для сервера. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classInterface_a70a50f621499cab2c1b240fa956f8800}{get\+Error\+File}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает имя файла для записи ошибок. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classInterface_aec0e8a433524c22a394a324cc5ec066f}{get\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает описание команд и параметров. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInterface_ab7b048ef35ddf32449a7b05c9c02e427}{parse\+Arguments}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Разбирает аргументы командной строки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки интерфейса командной строки. 
+
+Этот класс отвечает за разбор аргументов командной строки и предоставление доступа к параметрам. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}\label{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}} 
+\index{Interface@{Interface}!Interface@{Interface}}
+\index{Interface@{Interface}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Interface()}{Interface()}}
+{\footnotesize\ttfamily Interface\+::\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \mbox{\hyperlink{classInterface}{Interface}}. 
+
+Этот конструктор инициализирует объект класса \mbox{\hyperlink{classInterface}{Interface}}, устанавливая значения по умолчанию для его членов. Конструктор использует список инициализации для установки начальных значений для переменных file\+Name, port, file\+\_\+error и description.
+
+Инициализирует параметры по умолчанию\+:
+\begin{DoxyItemize}
+\item file\+Name\+: \char`\"{}base.\+txt\char`\"{}
+\item port\+: 33333
+\item file\+\_\+error\+: \char`\"{}error.\+txt\char`\"{}
+\item description\+: \char`\"{}\char`\"{} (пустая строка) 
+\end{DoxyItemize}
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classInterface_aec0e8a433524c22a394a324cc5ec066f}\label{classInterface_aec0e8a433524c22a394a324cc5ec066f}} 
+\index{Interface@{Interface}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily std\+::string Interface\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает описание команд и параметров. 
+
+Эта функция возвращает значение description, которое содержит описание команд и параметров, используемых в интерфейсе командной строки. Функция является константной, что означает, что она не изменяет состояние объекта.
+
+\begin{DoxyReturn}{Возвращает}
+Описание команд и параметров. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a70a50f621499cab2c1b240fa956f8800}\label{classInterface_a70a50f621499cab2c1b240fa956f8800}} 
+\index{Interface@{Interface}!getErrorFile@{getErrorFile}}
+\index{getErrorFile@{getErrorFile}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getErrorFile()}{getErrorFile()}}
+{\footnotesize\ttfamily std\+::string Interface\+::get\+Error\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает имя файла для записи ошибок. 
+
+Эта функция возвращает значение file\+\_\+error, которое содержит имя файла, в который будут записываться ошибки. Функция является константной, что означает, что она не изменяет состояние объекта.
+
+\begin{DoxyReturn}{Возвращает}
+Имя файла для записи ошибок. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_afc6d4df424b888cd415cdceabab59900}\label{classInterface_afc6d4df424b888cd415cdceabab59900}} 
+\index{Interface@{Interface}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily std\+::string Interface\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает имя файла с базой данных пользователей. 
+
+Эта функция возвращает значение file\+Name, которое содержит имя файла с базой данных пользователей. Функция является константной, что означает, что она не изменяет состояние объекта.
+
+\begin{DoxyReturn}{Возвращает}
+Имя файла с базой данных пользователей. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}\label{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}} 
+\index{Interface@{Interface}!getPort@{getPort}}
+\index{getPort@{getPort}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int Interface\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает номер порта для сервера. 
+
+Эта функция возвращает значение port, которое содержит номер порта, на котором сервер будет прослушивать подключения. Функция является константной, что означает, что она не изменяет состояние объекта.
+
+\begin{DoxyReturn}{Возвращает}
+Номер порта для сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_ab7b048ef35ddf32449a7b05c9c02e427}\label{classInterface_ab7b048ef35ddf32449a7b05c9c02e427}} 
+\index{Interface@{Interface}!parseArguments@{parseArguments}}
+\index{parseArguments@{parseArguments}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{parseArguments()}{parseArguments()}}
+{\footnotesize\ttfamily bool Interface\+::parse\+Arguments (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Разбирает аргументы командной строки. 
+
+Эта функция разбирает аргументы командной строки, переданные при запуске программы. Она обрабатывает различные опции, такие как {\ttfamily -\/-\/help}, {\ttfamily -\/-\/file}, {\ttfamily -\/-\/port}, и {\ttfamily -\/-\/error}, и устанавливает соответствующие значения. Если разбор аргументов прошел успешно, функция возвращает true. В случае ошибки выбрасывается исключение.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов. \\
+\hline
+{\em argv} & Массив аргументов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если разбор прошел успешно, иначе выбрасывает исключение. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при разборе аргументов. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{Interface_8cpp}{Interface.\+cpp}}\end{DoxyCompactItemize}

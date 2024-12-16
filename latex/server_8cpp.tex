@@ -1,0 +1,58 @@
+\hypertarget{server_8cpp}{}\doxysection{Файл server.\+cpp}
+\label{server_8cpp}\index{server.cpp@{server.cpp}}
+
+
+Реализация функций для работы сервера.  
+
+
+{\ttfamily \#include \char`\"{}server.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$cryptopp/cryptlib.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/sha.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/hex.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/filters.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/osrng.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$csignal$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+Граф включаемых заголовочных файлов для server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{server_8cpp_a0b0c865ef4798bc869f4642301d6f0b7}\label{server_8cpp_a0b0c865ef4798bc869f4642301d6f0b7}} 
+void {\bfseries alarm\+\_\+handler} (int signal)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация функций для работы сервера. 
+
+\begin{DoxyAuthor}{Автор}
+Синельникова Т.\+А. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+05.\+12.\+2024 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ
+\end{DoxyCopyright}
+Этот файл содержит реализацию функций, связанных с настройкой и запуском сервера, обработкой подключений клиентов. 

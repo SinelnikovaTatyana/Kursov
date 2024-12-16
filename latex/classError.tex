@@ -1,0 +1,83 @@
+\hypertarget{classError}{}\doxysection{Класс Error}
+\label{classError}\index{Error@{Error}}
+
+
+Класс для обработки и записи ошибок в файл.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classError_aca339d00ad8481fb4c184f0ece42698b}\label{classError_aca339d00ad8481fb4c184f0ece42698b}} 
+\mbox{\hyperlink{classError_aca339d00ad8481fb4c184f0ece42698b}{Error}} ()
+\begin{DoxyCompactList}\small\item\em -\/Конструктор по умолчанию \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classError_a6253c0d98f76b9ca931fdde30800511b}{errors}} (std\+::string error, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Записывает ошибку в файл. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classError_a39ecfbb37108f305c9f09587ae74ffec}{er}} (std\+::string file\+Name, std\+::string file\+\_\+error)
+\begin{DoxyCompactList}\small\item\em Проверяет доступность файла и записывает ошибку, если файл недоступен. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки и записи ошибок в файл. 
+
+Этот класс предоставляет методы для записи ошибок в файл и проверки доступности файлов. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classError_a39ecfbb37108f305c9f09587ae74ffec}\label{classError_a39ecfbb37108f305c9f09587ae74ffec}} 
+\index{Error@{Error}!er@{er}}
+\index{er@{er}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{er()}{er()}}
+{\footnotesize\ttfamily int Error\+::er (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name,  }\item[{std\+::string}]{file\+\_\+error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверяет доступность файла и записывает ошибку, если файл недоступен. 
+
+Эта статическая функция проверяет, доступен ли указанный файл для чтения. Если файл недоступен, функция записывает сообщение об ошибке в указанный файл ошибок.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Name} & Имя файла для проверки. \\
+\hline
+{\em file\+\_\+error} & Имя файла для записи ошибок. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1, если файл доступен, иначе выбрасывает исключение. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если файл недоступен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classError_a6253c0d98f76b9ca931fdde30800511b}\label{classError_a6253c0d98f76b9ca931fdde30800511b}} 
+\index{Error@{Error}!errors@{errors}}
+\index{errors@{errors}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{errors()}{errors()}}
+{\footnotesize\ttfamily void Error\+::errors (\begin{DoxyParamCaption}\item[{std\+::string}]{error,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Записывает ошибку в файл. 
+
+Эта статическая функция записывает переданную строку ошибки в указанный файл. Функция также добавляет текущую дату и время к записи ошибки. 
+\begin{DoxyParams}{Аргументы}
+{\em error} & Текст ошибки. \\
+\hline
+{\em name} & Имя файла для записи ошибки. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{error_8cpp}{error.\+cpp}}\item 
+\mbox{\hyperlink{server_8cpp}{server.\+cpp}}\end{DoxyCompactItemize}

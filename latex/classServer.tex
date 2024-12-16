@@ -1,0 +1,112 @@
+\hypertarget{classServer}{}\doxysection{Класс Server}
+\label{classServer}\index{Server@{Server}}
+
+
+Класс для управления сервером и обработки подключений клиентов.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer_a93029a632c8c25834a8522e12cbf52a2}{Server}} (\mbox{\hyperlink{classError}{Error}} \&err)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classServer}{Server}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classServer_aeb0aec2fefebfdb6583e3df93d9672cb}{self\+\_\+addr}} (std\+::string \&error, std\+::string \&file\+\_\+error, int port)
+\begin{DoxyCompactList}\small\item\em Настраивает сервер для прослушивания заданного порта. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classServer_a16b593109a6f0b85797652b836e69f02}{client\+\_\+addr}} (int s, std\+::string \&error, std\+::string \&file\+\_\+error)
+\begin{DoxyCompactList}\small\item\em Ожидает и принимает подключение клиента. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сервером и обработки подключений клиентов. 
+
+Этот класс отвечает за настройку сервера, прослушивание порта и обработку подключений клиентов. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classServer_a93029a632c8c25834a8522e12cbf52a2}\label{classServer_a93029a632c8c25834a8522e12cbf52a2}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classError}{Error}} \&}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \mbox{\hyperlink{classServer}{Server}}. 
+
+Этот конструктор инициализирует объект класса \mbox{\hyperlink{classServer}{Server}}, принимая ссылку на объект класса \mbox{\hyperlink{classError}{Error}}. Объект класса \mbox{\hyperlink{classError}{Error}} используется для обработки и записи ошибок, возникающих в процессе работы сервера.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em err} & Ссылка на объект класса \mbox{\hyperlink{classError}{Error}} для обработки ошибок. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classServer_a16b593109a6f0b85797652b836e69f02}\label{classServer_a16b593109a6f0b85797652b836e69f02}} 
+\index{Server@{Server}!client\_addr@{client\_addr}}
+\index{client\_addr@{client\_addr}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{client\_addr()}{client\_addr()}}
+{\footnotesize\ttfamily int Server\+::client\+\_\+addr (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{std\+::string \&}]{error,  }\item[{std\+::string \&}]{file\+\_\+error }\end{DoxyParamCaption})}
+
+
+
+Ожидает и принимает подключение клиента. 
+
+Эта функция ожидает подключения клиента на указанном дескрипторе сокета. Когда клиент подключается, функция возвращает дескриптор сокета для работы с клиентом. Если подключение не удается, функция возвращает -\/1 и записывает ошибку в указанный файл.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Дескриптор сокета, на котором сервер прослушивает подключения. \\
+\hline
+{\em error} & Ссылка на строку для записи ошибок. \\
+\hline
+{\em file\+\_\+error} & Имя файла для записи ошибок. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Дескриптор сокета для работы с клиентом, если подключение успешно, иначе -\/1. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при подключении клиента. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classServer_aeb0aec2fefebfdb6583e3df93d9672cb}\label{classServer_aeb0aec2fefebfdb6583e3df93d9672cb}} 
+\index{Server@{Server}!self\_addr@{self\_addr}}
+\index{self\_addr@{self\_addr}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{self\_addr()}{self\_addr()}}
+{\footnotesize\ttfamily int Server\+::self\+\_\+addr (\begin{DoxyParamCaption}\item[{std\+::string \&}]{error,  }\item[{std\+::string \&}]{file\+\_\+error,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Настраивает сервер для прослушивания заданного порта. 
+
+Эта функция выполняет настройку сервера для прослушивания подключений на указанном порту. Она создает сокет, устанавливает параметры сокета, настраивает таймауты и привязывает сокет к указанному порту. Если настройка прошла успешно, функция возвращает дескриптор сокета. В случае ошибки возвращается -\/1, и ошибка записывается в указанный файл.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em error} & Ссылка на строку для записи ошибок. \\
+\hline
+{\em file\+\_\+error} & Имя файла для записи ошибок. \\
+\hline
+{\em port} & Порт, на котором сервер будет прослушивать подключения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Дескриптор сокета, если настройка прошла успешно, иначе -\/1. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при настройке сервера. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{server_8cpp}{server.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\hypertarget{classCalculator}{}\doxysection{Класс Calculator}
+\label{classCalculator}\index{Calculator@{Calculator}}
+
+
+Класс для выполнения вычислений над векторами.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classCalculator_a098641ff9e3394a5ba3ec8d28c1596ab}{process\+Vector}} (const std\+::vector$<$ double $>$ \&vector\+Values)
+\begin{DoxyCompactList}\small\item\em Вычисляет произведение элементов вектора. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для выполнения вычислений над векторами. 
+
+Этот класс вычисления произведение элементов вектора. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCalculator_a098641ff9e3394a5ba3ec8d28c1596ab}\label{classCalculator_a098641ff9e3394a5ba3ec8d28c1596ab}} 
+\index{Calculator@{Calculator}!processVector@{processVector}}
+\index{processVector@{processVector}!Calculator@{Calculator}}
+\doxysubsubsection{\texorpdfstring{processVector()}{processVector()}}
+{\footnotesize\ttfamily double Calculator\+::process\+Vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{vector\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычисляет произведение элементов вектора. 
+
+Эта статическая функция вычисляет произведение всех элементов в переданном векторе значений типа double. Если вектор пуст, функция возвращает 1.\+0, так как произведение элементов пустого вектора считается равным 1.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vector\+Values} & Вектор значений для вычисления произведения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Произведение элементов вектора. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{calculator_8cpp}{calculator.\+cpp}}\end{DoxyCompactItemize}

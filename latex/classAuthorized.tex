@@ -1,0 +1,161 @@
+\hypertarget{classAuthorized}{}\doxysection{Класс Authorized}
+\label{classAuthorized}\index{Authorized@{Authorized}}
+
+
+Класс для обработки авторизации клиентов.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAuthorized_a7539b2989ec7ca3f942ebe54e0417c09}{Authorized}} (\mbox{\hyperlink{classError}{Error}} \&err)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classAuthorized}{Authorized}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuthorized_a69ea2105ac0d8331c0c94fd618fb6438}{msgsend}} (int work\+\_\+sock, const std\+::string \&mess)
+\begin{DoxyCompactList}\small\item\em Отправляет сообщение клиенту. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAuthorized_abdc0866146d55ca7beee316c52127f7e}{SHA}} (const std\+::string \&sah)
+\begin{DoxyCompactList}\small\item\em Вычисляет SHA-\/224 хеш строки. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAuthorized_a3f29c5f770b91d76121e7bec0848f33a}{salt\+\_\+generator}} (const std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Генерирует случайную соль заданной длины. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAuthorized_a2e04c72dc81d4dae53d64c08d1c7fdc4}{authorized}} (int work\+\_\+sock, std\+::string file\+Name, std\+::string file\+\_\+error)
+\begin{DoxyCompactList}\small\item\em Проверяет авторизационные данные клиента. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки авторизации клиентов. 
+
+Этот класс отвечает за проверку авторизационных данных клиента, включая генерацию соли и хеширование паролей. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classAuthorized_a7539b2989ec7ca3f942ebe54e0417c09}\label{classAuthorized_a7539b2989ec7ca3f942ebe54e0417c09}} 
+\index{Authorized@{Authorized}!Authorized@{Authorized}}
+\index{Authorized@{Authorized}!Authorized@{Authorized}}
+\doxysubsubsection{\texorpdfstring{Authorized()}{Authorized()}}
+{\footnotesize\ttfamily Authorized\+::\+Authorized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classError}{Error}} \&}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \mbox{\hyperlink{classAuthorized}{Authorized}}. 
+
+Этот конструктор инициализирует объект класса \mbox{\hyperlink{classAuthorized}{Authorized}}, принимая ссылку на объект класса \mbox{\hyperlink{classError}{Error}}. Объект класса \mbox{\hyperlink{classError}{Error}} используется для обработки и записи ошибок, возникающих в процессе авторизации клиентов.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em err} & Ссылка на объект класса \mbox{\hyperlink{classError}{Error}} для обработки ошибок. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classAuthorized_a2e04c72dc81d4dae53d64c08d1c7fdc4}\label{classAuthorized_a2e04c72dc81d4dae53d64c08d1c7fdc4}} 
+\index{Authorized@{Authorized}!authorized@{authorized}}
+\index{authorized@{authorized}!Authorized@{Authorized}}
+\doxysubsubsection{\texorpdfstring{authorized()}{authorized()}}
+{\footnotesize\ttfamily int Authorized\+::authorized (\begin{DoxyParamCaption}\item[{int}]{work\+\_\+sock,  }\item[{std\+::string}]{file\+Name,  }\item[{std\+::string}]{file\+\_\+error }\end{DoxyParamCaption})}
+
+
+
+Проверяет авторизационные данные клиента. 
+
+Эта функция проверяет авторизационные данные клиента, сравнивая их с данными, хранящимися в указанном файле. Если авторизация проходит успешно, функция возвращает 1. В случае ошибки возвращается -\/1, и ошибка записывается в указанный файл.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em work\+\_\+sock} & Дескриптор сокета для работы с клиентом. \\
+\hline
+{\em file\+Name} & Имя файла с авторизационными данными. \\
+\hline
+{\em file\+\_\+error} & Имя файла для записи ошибок. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1, если авторизация прошла успешно, иначе -\/1. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при проверке авторизации. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAuthorized_a69ea2105ac0d8331c0c94fd618fb6438}\label{classAuthorized_a69ea2105ac0d8331c0c94fd618fb6438}} 
+\index{Authorized@{Authorized}!msgsend@{msgsend}}
+\index{msgsend@{msgsend}!Authorized@{Authorized}}
+\doxysubsubsection{\texorpdfstring{msgsend()}{msgsend()}}
+{\footnotesize\ttfamily void Authorized\+::msgsend (\begin{DoxyParamCaption}\item[{int}]{work\+\_\+sock,  }\item[{const std\+::string \&}]{mess }\end{DoxyParamCaption})}
+
+
+
+Отправляет сообщение клиенту. 
+
+Эта функция отправляет строковое сообщение клиенту через указанный дескриптор сокета. Если при отправке сообщения возникает ошибка, функция записывает сообщение об ошибке и выбрасывает исключение.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em work\+\_\+sock} & Дескриптор сокета для работы с клиентом. \\
+\hline
+{\em mess} & Сообщение для отправки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при отправке сообщения. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAuthorized_a3f29c5f770b91d76121e7bec0848f33a}\label{classAuthorized_a3f29c5f770b91d76121e7bec0848f33a}} 
+\index{Authorized@{Authorized}!salt\_generator@{salt\_generator}}
+\index{salt\_generator@{salt\_generator}!Authorized@{Authorized}}
+\doxysubsubsection{\texorpdfstring{salt\_generator()}{salt\_generator()}}
+{\footnotesize\ttfamily std\+::string Authorized\+::salt\+\_\+generator (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Генерирует случайную соль заданной длины. 
+
+Эта функция генерирует случайную строку заданной длины, состоящую из символов, выбранных из заданного набора символов. Если при генерации строки возникает ошибка, функция записывает сообщение об ошибке и возвращает пустую строку.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em length} & Длина генерируемой строки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сгенерированная соль. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при генерации соли. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAuthorized_abdc0866146d55ca7beee316c52127f7e}\label{classAuthorized_abdc0866146d55ca7beee316c52127f7e}} 
+\index{Authorized@{Authorized}!SHA@{SHA}}
+\index{SHA@{SHA}!Authorized@{Authorized}}
+\doxysubsubsection{\texorpdfstring{SHA()}{SHA()}}
+{\footnotesize\ttfamily std\+::string Authorized\+::\+SHA (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sah }\end{DoxyParamCaption})}
+
+
+
+Вычисляет SHA-\/224 хеш строки. 
+
+Эта функция вычисляет SHA-\/224 хеш для переданной строки и возвращает результат в виде шестнадцатеричной строки. Если при вычислении хеша возникает ошибка, функция записывает сообщение об ошибке и возвращает пустую строку.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sah} & Строка для хеширования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш строки в виде шестнадцатеричной строки. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если произошла ошибка при вычислении хеша. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{authorization_8cpp}{authorization.\+cpp}}\end{DoxyCompactItemize}
