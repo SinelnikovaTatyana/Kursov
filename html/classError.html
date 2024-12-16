@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Программная реализация сетевого сервера: Класс Error</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная реализация сетевого сервера
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Разработка серверной программы для клиент-серверной системы обработки данных</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="classError-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Error</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для обработки и записи ошибок в файл.  
+ <a href="classError.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="server_8h_source.html">server.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aca339d00ad8481fb4c184f0ece42698b"><td class="memItemLeft" align="right" valign="top"><a id="aca339d00ad8481fb4c184f0ece42698b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classError.html#aca339d00ad8481fb4c184f0ece42698b">Error</a> ()</td></tr>
+<tr class="memdesc:aca339d00ad8481fb4c184f0ece42698b"><td class="mdescLeft">&#160;</td><td class="mdescRight">-Конструктор по умолчанию <br /></td></tr>
+<tr class="separator:aca339d00ad8481fb4c184f0ece42698b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a6253c0d98f76b9ca931fdde30800511b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classError.html#a6253c0d98f76b9ca931fdde30800511b">errors</a> (std::string error, std::string name)</td></tr>
+<tr class="memdesc:a6253c0d98f76b9ca931fdde30800511b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает ошибку в файл.  <a href="classError.html#a6253c0d98f76b9ca931fdde30800511b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6253c0d98f76b9ca931fdde30800511b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ecfbb37108f305c9f09587ae74ffec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classError.html#a39ecfbb37108f305c9f09587ae74ffec">er</a> (std::string fileName, std::string file_error)</td></tr>
+<tr class="memdesc:a39ecfbb37108f305c9f09587ae74ffec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет доступность файла и записывает ошибку, если файл недоступен.  <a href="classError.html#a39ecfbb37108f305c9f09587ae74ffec">Подробнее...</a><br /></td></tr>
+<tr class="separator:a39ecfbb37108f305c9f09587ae74ffec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для обработки и записи ошибок в файл. </p>
+<p>Этот класс предоставляет методы для записи ошибок в файл и проверки доступности файлов. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a39ecfbb37108f305c9f09587ae74ffec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ecfbb37108f305c9f09587ae74ffec">&#9670;&nbsp;</a></span>er()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Error::er </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет доступность файла и записывает ошибку, если файл недоступен. </p>
+<p>Эта статическая функция проверяет, доступен ли указанный файл для чтения. Если файл недоступен, функция записывает сообщение об ошибке в указанный файл ошибок.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Имя файла для проверки. </td></tr>
+    <tr><td class="paramname">file_error</td><td>Имя файла для записи ошибок. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1, если файл доступен, иначе выбрасывает исключение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRuntimeError.html" title="Класс для обработки исключений.">RuntimeError</a></td><td>Если файл недоступен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6253c0d98f76b9ca931fdde30800511b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6253c0d98f76b9ca931fdde30800511b">&#9670;&nbsp;</a></span>errors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Error::errors </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записывает ошибку в файл. </p>
+<p>Эта статическая функция записывает переданную строку ошибки в указанный файл. Функция также добавляет текущую дату и время к записи ошибки. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Текст ошибки. </td></tr>
+    <tr><td class="paramname">name</td><td>Имя файла для записи ошибки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="server_8h_source.html">server.h</a></li>
+<li><a class="el" href="error_8cpp.html">error.cpp</a></li>
+<li><a class="el" href="server_8cpp.html">server.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

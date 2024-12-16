@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Программная реализация сетевого сервера: Класс Authorized</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная реализация сетевого сервера
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Разработка серверной программы для клиент-серверной системы обработки данных</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classAuthorized-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Authorized</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для обработки авторизации клиентов.  
+ <a href="classAuthorized.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="server_8h_source.html">server.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7539b2989ec7ca3f942ebe54e0417c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAuthorized.html#a7539b2989ec7ca3f942ebe54e0417c09">Authorized</a> (<a class="el" href="classError.html">Error</a> &amp;err)</td></tr>
+<tr class="memdesc:a7539b2989ec7ca3f942ebe54e0417c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="classAuthorized.html" title="Класс для обработки авторизации клиентов.">Authorized</a>.  <a href="classAuthorized.html#a7539b2989ec7ca3f942ebe54e0417c09">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7539b2989ec7ca3f942ebe54e0417c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ea2105ac0d8331c0c94fd618fb6438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAuthorized.html#a69ea2105ac0d8331c0c94fd618fb6438">msgsend</a> (int work_sock, const std::string &amp;mess)</td></tr>
+<tr class="memdesc:a69ea2105ac0d8331c0c94fd618fb6438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет сообщение клиенту.  <a href="classAuthorized.html#a69ea2105ac0d8331c0c94fd618fb6438">Подробнее...</a><br /></td></tr>
+<tr class="separator:a69ea2105ac0d8331c0c94fd618fb6438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc0866146d55ca7beee316c52127f7e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAuthorized.html#abdc0866146d55ca7beee316c52127f7e">SHA</a> (const std::string &amp;sah)</td></tr>
+<tr class="memdesc:abdc0866146d55ca7beee316c52127f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет SHA-224 хеш строки.  <a href="classAuthorized.html#abdc0866146d55ca7beee316c52127f7e">Подробнее...</a><br /></td></tr>
+<tr class="separator:abdc0866146d55ca7beee316c52127f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f29c5f770b91d76121e7bec0848f33a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAuthorized.html#a3f29c5f770b91d76121e7bec0848f33a">salt_generator</a> (const std::size_t length)</td></tr>
+<tr class="memdesc:a3f29c5f770b91d76121e7bec0848f33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерирует случайную соль заданной длины.  <a href="classAuthorized.html#a3f29c5f770b91d76121e7bec0848f33a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3f29c5f770b91d76121e7bec0848f33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e04c72dc81d4dae53d64c08d1c7fdc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAuthorized.html#a2e04c72dc81d4dae53d64c08d1c7fdc4">authorized</a> (int work_sock, std::string fileName, std::string file_error)</td></tr>
+<tr class="memdesc:a2e04c72dc81d4dae53d64c08d1c7fdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет авторизационные данные клиента.  <a href="classAuthorized.html#a2e04c72dc81d4dae53d64c08d1c7fdc4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e04c72dc81d4dae53d64c08d1c7fdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для обработки авторизации клиентов. </p>
+<p>Этот класс отвечает за проверку авторизационных данных клиента, включая генерацию соли и хеширование паролей. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a7539b2989ec7ca3f942ebe54e0417c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7539b2989ec7ca3f942ebe54e0417c09">&#9670;&nbsp;</a></span>Authorized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Authorized::Authorized </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classError.html">Error</a> &amp;&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="classAuthorized.html" title="Класс для обработки авторизации клиентов.">Authorized</a>. </p>
+<p>Этот конструктор инициализирует объект класса <a class="el" href="classAuthorized.html" title="Класс для обработки авторизации клиентов.">Authorized</a>, принимая ссылку на объект класса <a class="el" href="classError.html" title="Класс для обработки и записи ошибок в файл.">Error</a>. Объект класса <a class="el" href="classError.html" title="Класс для обработки и записи ошибок в файл.">Error</a> используется для обработки и записи ошибок, возникающих в процессе авторизации клиентов.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Ссылка на объект класса <a class="el" href="classError.html" title="Класс для обработки и записи ошибок в файл.">Error</a> для обработки ошибок. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a2e04c72dc81d4dae53d64c08d1c7fdc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e04c72dc81d4dae53d64c08d1c7fdc4">&#9670;&nbsp;</a></span>authorized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Authorized::authorized </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>work_sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет авторизационные данные клиента. </p>
+<p>Эта функция проверяет авторизационные данные клиента, сравнивая их с данными, хранящимися в указанном файле. Если авторизация проходит успешно, функция возвращает 1. В случае ошибки возвращается -1, и ошибка записывается в указанный файл.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">work_sock</td><td>Дескриптор сокета для работы с клиентом. </td></tr>
+    <tr><td class="paramname">fileName</td><td>Имя файла с авторизационными данными. </td></tr>
+    <tr><td class="paramname">file_error</td><td>Имя файла для записи ошибок. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1, если авторизация прошла успешно, иначе -1. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRuntimeError.html" title="Класс для обработки исключений.">RuntimeError</a></td><td>Если произошла ошибка при проверке авторизации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69ea2105ac0d8331c0c94fd618fb6438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ea2105ac0d8331c0c94fd618fb6438">&#9670;&nbsp;</a></span>msgsend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Authorized::msgsend </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>work_sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправляет сообщение клиенту. </p>
+<p>Эта функция отправляет строковое сообщение клиенту через указанный дескриптор сокета. Если при отправке сообщения возникает ошибка, функция записывает сообщение об ошибке и выбрасывает исключение.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">work_sock</td><td>Дескриптор сокета для работы с клиентом. </td></tr>
+    <tr><td class="paramname">mess</td><td>Сообщение для отправки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRuntimeError.html" title="Класс для обработки исключений.">RuntimeError</a></td><td>Если произошла ошибка при отправке сообщения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f29c5f770b91d76121e7bec0848f33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f29c5f770b91d76121e7bec0848f33a">&#9670;&nbsp;</a></span>salt_generator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Authorized::salt_generator </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Генерирует случайную соль заданной длины. </p>
+<p>Эта функция генерирует случайную строку заданной длины, состоящую из символов, выбранных из заданного набора символов. Если при генерации строки возникает ошибка, функция записывает сообщение об ошибке и возвращает пустую строку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>Длина генерируемой строки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сгенерированная соль. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRuntimeError.html" title="Класс для обработки исключений.">RuntimeError</a></td><td>Если произошла ошибка при генерации соли. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdc0866146d55ca7beee316c52127f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc0866146d55ca7beee316c52127f7e">&#9670;&nbsp;</a></span>SHA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Authorized::SHA </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sah</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет SHA-224 хеш строки. </p>
+<p>Эта функция вычисляет SHA-224 хеш для переданной строки и возвращает результат в виде шестнадцатеричной строки. Если при вычислении хеша возникает ошибка, функция записывает сообщение об ошибке и возвращает пустую строку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sah</td><td>Строка для хеширования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Хеш строки в виде шестнадцатеричной строки. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classRuntimeError.html" title="Класс для обработки исключений.">RuntimeError</a></td><td>Если произошла ошибка при вычислении хеша. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="server_8h_source.html">server.h</a></li>
+<li><a class="el" href="authorization_8cpp.html">authorization.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
